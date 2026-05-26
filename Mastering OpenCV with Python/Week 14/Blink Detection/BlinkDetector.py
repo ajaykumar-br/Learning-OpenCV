@@ -24,7 +24,7 @@ landmarkDetector = cv2.face.createFacemarkLBF()
 landmarkDetector.loadModel(LBF_PATH)
 
 VIDEO_SOURCE = '../data/images/input-video.mp4'
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(VIDEO_SOURCE)
 state_prev = state_curr = 'open'
 
 #------------------------------------------------------------------------------
